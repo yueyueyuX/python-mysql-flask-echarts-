@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script type="text/javascript" src="../static/js/jquery.js"></script>
+<script type="text/javascript" src="../static/js/jquery.cxselect.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.limarquee.js"></script>
+<script type="text/javascript" src="../static/js/echarts.min.js"></script>
+<script src="../static/js/echarts-wordcloud.min.js"></script>
+<script type="text/javascript" src="../static/js/js.js"></script>
+<script type="text/javascript" src="../static/js/controller.js"></script>
+
+<link rel="shortcut icon" href="#" />
+<link rel="stylesheet" href="../static/css/comon0.css">
+</head>
+<body>
+<div style="background:#000d4a url(../static/images/bg.jpg) center top;">
+	<div class="loading">
+  <div class="loadbox"> <img src="../static/picture/loading.gif"> 页面加载中... </div>
+</div>
+	<div class="back"></div>
+<div class="head">
+	 <div class="weather"><span id="showTime"></span></div>
+  <h1><a href="http://quote.eastmoney.com/center/gridlist.html#hs_a_board" style="color: white">股市行情板</a></h1>
+
+</div>
+	<script>
+var t = null;
+    t = setTimeout(time,1000);//开始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+		var y=dt.getFullYear();
+		var mt=dt.getMonth()+1;
+		var day=dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+       document.getElementById("showTime").innerHTML = y+"年"+mt+"月"+day+"日"+h+"时"+m+"分"+s+"秒";
+       t = setTimeout(time,1000); //设定定时器，循环运行     
+    } 
+
+</script>
+<div class="mainbox">
+  <ul class="clearfix">
+    <li>
+      <div class="boxall" style="height:260px;width:470px;">
+
+             <div class="alltitle">沪深京A股成交额(单位：万元)</div>
+	<div class="navboxall">
+        <div class="zb1" id="zb1"></div>
+        <div class="zb2" id="zb2"></div>
+        <div class="zb3" id="zb3"></div>
+
+		  </div>
+
+      </div>
+      <div class="boxall" style="height:700px;">
+        <div class="alltitle">京沪深概念</div>
+        
+       <div class="navboxall" id="echart1"></div>
+      </div>
+    </li>
+    <li>
+      
+    <div class="boxall" style="height:260px; width:450px;margin-left:180px">
+		<div class="clearfix navboxall" style="height: 100%">
+		<div class="pulll_left num">
+			<div class="numbt">总成交额<span>(单位：万元)</span></div>
+			<div class="numtxt"></div>
+			</div>
+		</div>
+      </div>
+		   <div class="boxall" style="height:350px">
+        <div class="alltitle">个股K线</div>
+			   <div class="navboxall" id="echart4"></div>
+
+      </div>
+		   <div class="boxall" style="height:340px">
+        <div class="alltitle">个股 成交额/成交量与涨跌幅情况</div>
+          <div class="navboxall" id="echart3"></div>
+      </div>
+
+    </li>
+    <li>
+      <div class="boxall" style="height:600px">
+          <div class="alltitle">个股 成交额(万元)</div>
+			   <div class="navboxall" id="echarts_5"></div>
+      </div>
+
+		 <div class="boxall" style="height:365px">
+        <div class="alltitle">概念股领涨股票</div>
+			 <div class="navboxall" id="echart2" ></div>
+      </div>
+		
+		
+    </li>
+  </ul>
+
+</div>
+	</div>
+
+	<script>
+
+</script> 
+
+</body>
+</html>

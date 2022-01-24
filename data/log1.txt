@@ -1,0 +1,93 @@
+2021-12-18 11:32:34 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 11:32:34 base.py[line:886] INFO Added job "my_job2" to job store "default"
+2021-12-18 11:32:34 base.py[line:171] INFO Scheduler started
+2021-12-18 11:33:16 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 11:33:16 base.py[line:886] INFO Added job "my_job2" to job store "default"
+2021-12-18 11:33:16 base.py[line:171] INFO Scheduler started
+2021-12-18 11:34:00 base.py[line:123] INFO Running job "my_job2 (trigger: cron[hour='11', minute='34'], next run at: 2021-12-18 11:34:00 CST)" (scheduled at 2021-12-18 11:34:00+08:00)
+2021-12-18 11:34:00 base.py[line:144] INFO Job "my_job2 (trigger: cron[hour='11', minute='34'], next run at: 2021-12-19 11:34:00 CST)" executed successfully
+2021-12-18 11:39:20 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 11:39:20 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 11:39:20 base.py[line:171] INFO Scheduler started
+2021-12-18 11:40:00 base.py[line:123] INFO Running job "my_job1 (trigger: cron[hour='11', minute='40'], next run at: 2021-12-18 11:40:00 CST)" (scheduled at 2021-12-18 11:40:00+08:00)
+2021-12-18 12:26:16 base.py[line:131] ERROR Job "my_job1 (trigger: cron[hour='11', minute='40'], next run at: 2021-12-19 11:40:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:/Python/PycharmProjects/VisualizationFinal/data/Scheduler.py", line 60, in my_job1
+    deleteNone(table)
+  File "D:\Python\PycharmProjects\VisualizationFinal\data\Data.py", line 32, in deleteNone
+    cursor.execute(sql, tablename)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 161, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 140, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: not all arguments converted during string formatting
+2021-12-18 13:24:54 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 13:24:54 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 13:24:54 base.py[line:171] INFO Scheduler started
+2021-12-18 13:25:00 base.py[line:123] INFO Running job "my_job1 (trigger: cron[hour='13', minute='25'], next run at: 2021-12-18 13:25:00 CST)" (scheduled at 2021-12-18 13:25:00+08:00)
+2021-12-18 14:03:24 base.py[line:131] ERROR Job "my_job1 (trigger: cron[hour='13', minute='25'], next run at: 2021-12-19 13:25:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:/Python/PycharmProjects/VisualizationFinal/data/Scheduler.py", line 60, in my_job1
+    deleteNone(table)
+  File "D:\Python\PycharmProjects\VisualizationFinal\data\Data.py", line 32, in deleteNone
+    cursor.execute(sql, tablename)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 161, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 140, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: not all arguments converted during string formatting
+2021-12-18 14:07:04 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 14:07:04 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 14:07:04 base.py[line:171] INFO Scheduler started
+2021-12-18 14:07:54 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 14:07:54 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 14:07:54 base.py[line:171] INFO Scheduler started
+2021-12-18 14:08:00 base.py[line:123] INFO Running job "my_job1 (trigger: cron[hour='14', minute='8'], next run at: 2021-12-18 14:08:00 CST)" (scheduled at 2021-12-18 14:08:00+08:00)
+2021-12-18 14:10:52 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 14:10:52 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 14:10:52 base.py[line:171] INFO Scheduler started
+2021-12-18 14:11:00 base.py[line:123] INFO Running job "my_job1 (trigger: cron[hour='14', minute='11'], next run at: 2021-12-18 14:11:00 CST)" (scheduled at 2021-12-18 14:11:00+08:00)
+2021-12-18 14:12:41 base.py[line:131] ERROR Job "my_job1 (trigger: cron[hour='14', minute='11'], next run at: 2021-12-19 14:11:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:/Python/PycharmProjects/VisualizationFinal/data/Scheduler.py", line 61, in my_job1
+    deleteNone(table)
+  File "D:\Python\PycharmProjects\VisualizationFinal\data\Data.py", line 32, in deleteNone
+    cursor.execute(sql, tablename)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 161, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 140, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: not all arguments converted during string formatting
+2021-12-18 14:27:15 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 14:27:15 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 14:27:15 base.py[line:171] INFO Scheduler started
+2021-12-18 14:28:00 base.py[line:123] INFO Running job "my_job1 (trigger: cron[hour='14', minute='28'], next run at: 2021-12-18 14:28:00 CST)" (scheduled at 2021-12-18 14:28:00+08:00)
+2021-12-18 15:15:06 base.py[line:131] ERROR Job "my_job1 (trigger: cron[hour='14', minute='28'], next run at: 2021-12-19 14:28:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:/Python/PycharmProjects/VisualizationFinal/data/Scheduler.py", line 61, in my_job1
+    deleteNone(table)
+  File "D:\Python\PycharmProjects\VisualizationFinal\data\Data.py", line 32, in deleteNone
+    cursor.execute(sql, tablename)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 161, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Yuzuru Hanyu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 140, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: not all arguments converted during string formatting
+2021-12-18 15:33:17 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 15:33:17 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 15:33:17 base.py[line:171] INFO Scheduler started
+2021-12-18 15:34:00 base.py[line:123] INFO Running job "my_job1 (trigger: cron[hour='15', minute='34'], next run at: 2021-12-18 15:34:00 CST)" (scheduled at 2021-12-18 15:34:00+08:00)
+2021-12-18 17:36:54 base.py[line:144] INFO Job "my_job1 (trigger: cron[hour='15', minute='34'], next run at: 2021-12-19 15:34:00 CST)" executed successfully
+2021-12-18 17:48:37 base.py[line:445] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-12-18 17:48:37 base.py[line:886] INFO Added job "my_job1" to job store "default"
+2021-12-18 17:48:37 base.py[line:171] INFO Scheduler started
+2021-12-18 17:49:00 base.py[line:123] INFO Running job "my_job1 (trigger: cron[hour='17', minute='49'], next run at: 2021-12-18 17:49:00 CST)" (scheduled at 2021-12-18 17:49:00+08:00)
+2021-12-18 17:50:52 base.py[line:144] INFO Job "my_job1 (trigger: cron[hour='17', minute='49'], next run at: 2021-12-19 17:49:00 CST)" executed successfully
